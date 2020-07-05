@@ -1,0 +1,63 @@
+.jsoneditor {
+    height: 1000px;
+    max-height: 560px !important;
+    border: thin solid #cccccc;
+}
+
+.jsoneditor-poweredBy {
+    display: none;
+}
+
+.jsoneditor-contextmenu ul.jsoneditor-menu li > button.jsoneditor-selected,
+.jsoneditor-contextmenu ul.jsoneditor-menu li > button.jsoneditor-selected:hover {
+    background-color: #3983f9;
+}
+
+.jsoneditor-sort, 
+.jsoneditor-transform,
+.jsoneditor-repair {
+    display: none;
+}
+
+/* .jsoneditor {
+    max-height: 545px !important;
+    margin-top: 4px;
+} */
+
+@media screen and (max-width: 800px) {
+    .jsoneditor {
+        height: 1600px !important;
+        max-height: 1600px !important;
+    }
+    
+    /* .jsoneditor {
+        max-height: 545px !important;
+        margin-top: 4px;
+    } */
+}
+
+@media screen and (max-width: 1200px) {
+    .jsoneditor {
+        height: 1000px;
+        max-height: 560px !important;
+        margin-top: 4px;
+    }
+    
+    /* .jsoneditor {
+        max-height: 545px !important;
+        margin-top: 4px;
+    } */
+}
+
+@media screen and (min-width: 1400px) {
+    .jsoneditor {
+        height: 1600px !important;
+        max-height: 1510px !important;
+        margin-top: 4px;
+    }
+    
+    /* .jsoneditor {
+        max-height: 1485px !important;
+        margin-top: 4px;
+    } */
+}

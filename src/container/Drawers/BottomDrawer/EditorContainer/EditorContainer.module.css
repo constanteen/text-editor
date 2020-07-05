@@ -1,0 +1,40 @@
+.boxes {
+    display: flex;
+    width: auto;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 4%;
+    max-height: 94%;
+    overflow: hidden;
+    flex: 0 1 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s border-top ease;
+    border-top: 2px solid #a4ade1;
+}
+
+.resizer {
+    position: relative;
+    display: flex;
+    min-width: 0.5%;
+    z-index: 3;
+    background: #cac6c6;
+    border-left: .5px solid #e8e8e8;
+    border-right: .5px solid #e8e8e8;
+    transition: .2s background ease;
+}
+
+.resizer:not(:first-child):hover, .resizer:not(:first-child):active {
+    cursor: col-resize;
+    background: #a4ade1;
+}
+
+/* .hbs-editor-resizer
+.css-editor-resizer
+.js-editor-resizer */
+
+.box {
+    width: calc((100% - 1.5%) / 3);
+}
+
