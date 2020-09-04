@@ -30,7 +30,7 @@ export default class Layout extends Component {
 		return (
 			<div className={classes.Container}>
 				<CssBaseline />
-				<Backdrop showBackdrop={this.state.showBackdrop} invisible={false} />
+				<Backdrop showBackdrop={this.state.showBackdrop} invisible={true} />
 				<div className={classes.Content}>
 					<LeftSidebar
 						leftDrawerOpen={this.props.isDrawerOpen}

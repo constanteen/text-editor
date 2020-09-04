@@ -4,6 +4,8 @@ import ace from 'brace';
 
 import 'brace/mode/handlebars';
 import 'brace/theme/chrome';
+import 'brace/theme/dracula';
+// import 'brace/theme/clouds_midnight';
 import 'ace-builds/src-noconflict/ext-language_tools';
 import 'ace-builds/src-noconflict/ext-searchbox';
 import 'ace-builds/src-noconflict/ext-static_highlight';
@@ -34,6 +36,7 @@ export default class HandlebarsEditor extends React.Component {
 			width: 0,
 			newValue: '',
 		};
+		this.themeValue= "chrome";
 	}
 
 	hbsref = React.createRef();
@@ -71,7 +74,7 @@ export default class HandlebarsEditor extends React.Component {
 					ref={this.hbsref}
 					style={styles.jsStyle}
 					mode="handlebars"
-					theme="chrome"
+					theme={this.themeValue}
 					onChange={this.onChange}
 					name="uniqueHandlebarsId"
 					editorProps={{

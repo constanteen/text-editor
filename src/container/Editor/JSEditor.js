@@ -4,6 +4,7 @@ import ace from 'brace';
 
 import 'brace/mode/javascript';
 import 'brace/theme/chrome';
+import 'brace/theme/dracula';
 import 'brace/snippets/javascript';
 import 'ace-builds/src-noconflict/ext-language_tools';
 import 'ace-builds/src-noconflict/ext-searchbox';
@@ -35,6 +36,7 @@ export default class JavascriptEditor extends React.Component {
 			width: 0,
 			newValue: ''
 		}
+		this.themeValue= "chrome";
 	}
 
 	jsref = React.createRef();
@@ -72,7 +74,7 @@ export default class JavascriptEditor extends React.Component {
 					style={styles.jsStyle}
 					ref={this.jsref}
 					mode="javascript"
-					theme="chrome"
+					theme={this.themeValue}
 					onChange={this.onChange}
 					value={this.state.newValue}
 					name="uniqueJavascriptId"

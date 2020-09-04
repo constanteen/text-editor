@@ -4,6 +4,8 @@ import ace from 'brace';
 
 import 'brace/mode/scss';
 import 'brace/theme/chrome';
+import 'brace/theme/dracula';
+// import 'brace/theme/clouds_midnight';
 import 'ace-builds/src-noconflict/ext-language_tools'
 
 import EditorOptions from './EditorOptions/EditorOptions';
@@ -32,6 +34,7 @@ export default class StyleEditor extends React.Component {
 			width: 0,
 			newValue: '',
 		}
+		this.themeValue= "chrome";
 	}
 
 	scssref = React.createRef();
@@ -69,7 +72,7 @@ export default class StyleEditor extends React.Component {
 					ref={this.scssref}
 					style={styles.jsStyle}
 					mode="scss"
-					theme="chrome"
+					theme={this.themeValue}
 					onChange={this.onChange}
 					value={this.state.newValue}
 					name="uniqueSCSSId"
