@@ -19,11 +19,10 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 ```sh
 git clone https://github.com/despeakableme/text-editor.git
 ```
-3. Install NPM packages
+2. Install NPM packages
 ```sh
 npm install
