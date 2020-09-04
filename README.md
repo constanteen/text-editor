@@ -1,6 +1,6 @@
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](/src/assets/main_page.png)
+![product-screenshot](./src/assets/main_page.png)
 
 This project is a real time text editor with a preview window. The text editors on the window have support for with support for Handlebars, Javascript, SCSS/CSS and JSON.
 
